@@ -1,0 +1,36 @@
+html {
+    position: relative;
+    min-height: 100%;
+    min-width: 320px;
+}
+
+body {
+    background-color: #000000;
+}
+
+h1.logo {
+    font-size: 44px;
+    font-weight: 100;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #404040;
+}
+
+.mainButtons {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #0a0ed1;
+    box-shadow: none;
+    border: 1px solid #0084ff;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.mainButtons:hover {
+    opacity: 0.55;
+}
+
+a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='pl'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>{% block title %}Welcome!{% endblock %}</title>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>"> {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" />
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <div class="container">
+        <header>
+            <div class="text-center mb-4">
+                <h1 class=" mt-4 logo">
+                    Dice game <br/>
+                </h1>
+            </div>
+        </header>
+    </div>
+
+    {% block body %} {% endblock %}
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/styleFunctions.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
+    <footer class="mt-auto text-center">
+
+        All rights reserved 2021 &copy;
+
+    </footer>
+
+    {% block footer %} {% endblock %} {% block links %} {% endblock %}
+</body>
+
+</html>
