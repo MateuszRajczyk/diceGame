@@ -4,7 +4,9 @@
 
     <div class="row justify-content-center mb-4">
         <div class="col-4">
-            Hello there
+            {% for winner in winners %}
+            <div>{{ winner.time_play }}</div>
+            {% endfor %}
         </div>
     </div>
 

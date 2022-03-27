@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block footer %}
 
 <script>
-    //showModal();
+    validateUserPlayForm();
     menageGame();
 </script>
 {% endblock %} {% block body %}
@@ -46,14 +46,16 @@
 
     <div class="row justify-content-center mb-4">
         <div class="text-center mt-5">
-            <form>
+            <form id="play_form">
                 <label for="result_user" class="me-2">Your result of roll the dice</label>
                 <input id="result_user" name="user_result" type="number" placeholder="user result" required>
 
                 <button type="button" id="showResult" class="btn play">Play</button>
+
+                <div class="text-start error_user_input text-danger">
+
+                </div>
             </form>
-
-
         </div>
     </div>
 
