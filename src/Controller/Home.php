@@ -21,11 +21,4 @@ class Home extends AbstractController
         return $this->render('/NewGame/newGame.html');
         
     }
-
-    #[Route('/results')]
-
-    public function results()
-    {
-        return $this->render('/Results/allResults.html');
-    }
 }
