@@ -1,13 +1,35 @@
 {% extends "base.html" %} {% block body %}
-<div class="container">
-
-
+<div class="container col-6">
+    <a href="/" class="showResult resultButton col-4 text-center px-3 py-2">Back to menu</a>
     <div class="row justify-content-center mb-4">
-        <div class="col-4">
-            {% for winner in winners %}
-            <div>{{ winner.time_play }}</div>
-            {% endfor %}
-        </div>
+
+
+
+        <table class="table caption-top table-sm mt-3 table-bordered border-info">
+            <thead>
+                {% if winners is defined %}
+                <tr>
+                    <th>Winner</th>
+                    <th>User Result</th>
+                    <th>Computer Result</th>
+                    <th>Date</th>
+                    <th>Tine</th>
+                </tr>
+                {% endif %}
+            </thead>
+
+            <tbody>
+                {% for winner in winners %}
+                <tr>
+                    <td>{{ winner.winner }}</td>
+                    <td>{{ winner.user_result }}</td>
+                    <td>{{ winner.computer_result }}</td>
+                    <td>{{ winner.date_play }}</td>
+                    <td>{{ winner.time_play }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
 
 </div>

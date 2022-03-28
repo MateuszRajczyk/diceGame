@@ -1,11 +1,3 @@
-function showModal() {
-    $(document).ready(function() {
-        $('#showResult').click(function() {
-            $('#showWinner').modal('show');
-        });
-    });
-}
-
 function menageGame() {
     $(document).ready(function() {
         $('#showResult').click(function() {
@@ -19,9 +11,9 @@ function menageGame() {
                     },
                     dataType: 'JSON',
                     success: function(res) {
-                        $('#userResult').val(res.user);
-                        $('#computerResult').val(res.computer);
-                        $('#winner').val(res.winner);
+                        $('#userResult').text(res.user);
+                        $('#computerResult').text(res.computer);
+                        $('#winner').text(res.winner);
                         $('#showWinner').modal('show');
                     }
                 });

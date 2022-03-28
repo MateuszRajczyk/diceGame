@@ -18,19 +18,114 @@ h1.logo {
 .mainButtons {
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: #0a0ed1;
+    background-color: #ff9100b6;
     box-shadow: none;
-    border: 1px solid #0084ff;
+    border: 1px solid #d8d6c7;
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
+    border-radius: 8px;
 }
 
 .mainButtons:hover {
-    opacity: 0.55;
+    opacity: 0.85;
+    color: #000000;
 }
 
-a {
-    display: block;
+.mainButtons {
     color: #000000;
     text-decoration: none;
+}
+
+#titleGame {
+    text-decoration: none;
+}
+
+.showResult {
+    background-color: #a33d01;
+    color: #000000;
+}
+
+button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.showResult:hover {
+    background-color: #da6900;
+    border: 1px solid #fff;
+    color: #000000;
+}
+
+#result_user {
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+#result_user:focus {
+    border: 2px solid #d46700;
+    box-shadow: none;
+    outline: none;
+}
+
+.input-group-text {
+    background-color: transparent;
+    border: transparent;
+}
+
+label {
+    color: rgb(124, 122, 122);
+}
+
+.modal-header {
+    background-color: #0047e0;
+}
+
+.closeButton {
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+}
+
+.closeButton:hover {
+    font-weight: bold;
+}
+
+.modal-title {
+    color: #000000;
+}
+
+span {
+    font-weight: bold;
+}
+
+.resultButton {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.resultButton:hover {
+    color: #000000;
+}
+
+table {
+    color: #999494;
+}
+
+table td {
+    text-align: center;
+}
+
+table th {
+    text-align: center;
+}
+
+th {
+    color: #999494;
+}
+
+td {
+    color: #999494;
 }
