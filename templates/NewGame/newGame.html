@@ -18,24 +18,27 @@
 
                 <div class="modal-body">
                     <div class="input-group-text">
-                        <label for="user" class="form-label">Your result</label>
-                        <input disabled id="userResult" class="form-control">
+                        <span class="me-3">Your result</span>
+                        <div id="userResult"></div>
+                    </div>
+
+
+                    <div class="input-group-text">
+                        <span class="me-3">Computer result</span>
+                        <div id="computerResult"></div>
                     </div>
 
                     <div class="input-group-text">
-                        <label for="computer" class="form-label">Computer result</label>
-                        <input disabled id="computerResult" class="form-control">
+                        <span class="me-3">Winner</span>
+                        <div id="winner"></div>
                     </div>
 
-                    <div class="input-group-text">
-                        <label for="winner" class="form-label">Winner: </label>
-                        <input disabled id="winner" class="form-control">
-                    </div>
 
                 </div>
 
+
                 <div class="modal-footer mt-2 mb-2">
-                    <button type="button" id="" class="btn" data-bs-dismiss="modal">Ok</button>
+                    <button type="button" class="btn showResult" data-bs-dismiss="modal">Ok</button>
                 </div>
 
             </div>
@@ -45,19 +48,25 @@
 
 
     <div class="row justify-content-center mb-4">
-        <div class="text-center mt-5">
+        <div class="text-center mt-5 col-6">
             <form id="play_form">
-                <label for="result_user" class="me-2">Your result of roll the dice</label>
-                <input id="result_user" name="user_result" type="number" placeholder="user result" required>
 
-                <button type="button" id="showResult" class="btn play">Play</button>
+                <div class="input-group-text">
+                    <label for="result_user" class="me-2">Your result of roll the dice</label>
+                    <input id="result_user" name="user_result" type="number" placeholder="user result" required>
 
-                <div class="text-start error_user_input text-danger">
+                    <button type="button" id="showResult" class="btn play py-1 px-2 ms-1 showResult">Play</button>
+
+                    <a href="/results" class="showResult resultButton px-2 ms-1">Show previous results</a>
 
                 </div>
-            </form>
+
+                <div class="text-start error_user_input text-danger ms-2"></div>
+
         </div>
+        </form>
     </div>
+</div>
 
 </div>
 {% endblock %}
